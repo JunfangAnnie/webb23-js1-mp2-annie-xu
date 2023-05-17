@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Sten, sax, påse</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sten - Sax - Påse</h1>
+            <img src="image/rps.png.png" alt="Sten, Sax, Påse" width="200px">
+        </header>
+
+        <section class="playerName">
+            <input type="text" id="playerNameInput" placeholder="Skriv ditt namn här!">
+            <button id="startButton">Börja spela!</button>    
+            <h2>Välkommen och lycka till, <span id="playerName"></span></h2>
+        </section>
+        
+        <section class="game">
+            <div class="title"></div>
+            <div class="score">  
+                <div class="playerScore">
+                    <h2>Dina poäng: </h2>
+                    <p class="p-count">0</p>
+                </div> 
+
+                <div class="computerScore">
+                    <h2>Datorns poäng: </h2>
+                    <p class="c-count">0</p>
+                </div>
+            </div> 
+
+            <div class="move">Välj ditt slag: </div>    
+            <div class="options">
+                <button class="rock">Sten</button>
+                <button class="scissor">Sax</button>    
+                <button class="paper">Påse</button>
+            </div>
+            
+            <div class="playerHand">Ditt val: </div>
+            <div class="computerHand">Datorns val: </div>      
+            <div class="result"></div>
+        </section>
+    </div>
+ 
+</body>
+</html>
