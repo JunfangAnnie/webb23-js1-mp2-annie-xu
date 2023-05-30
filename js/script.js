@@ -16,10 +16,18 @@ const computerEl = document.querySelector('.c-count')
 const playerOptions = [rockBtn, scissorBtn, paperBtn]
 const computerOptions = ['Sten', 'Sax', 'Påse']
 
-startButton.addEventListener('click', () => {
-  playerName = playerNameInput.value;
-  document.getElementById('playerName').textContent = playerName; 
-});
+const form = document.querySelector('form');
+
+form.addEventListener('submit', replaceText);
+
+function replaceText(event){
+    event.preventDefault();
+
+    const textInput = document.querySelector('#text');
+
+    const h2 = document.querySelector('h2');
+    h2.innerText = textInput.value;
+}
 
 const computer = () => {
   let totalOptions = Math.floor(Math.random() * 3);
